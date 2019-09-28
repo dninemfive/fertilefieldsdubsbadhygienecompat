@@ -27,6 +27,9 @@
 		<products>
 			<Fertilizer>1</Fertilizer>
 		</products>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+		</recipeUsers>
 	</RecipeDef>
 	<RecipeDef>
 		<defName>Make_FertilizerFromBiosolidsBulk</defName>
@@ -55,5 +58,8 @@
 		<products>
 			<Fertilizer>10</Fertilizer>
 		</products>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+		</recipeUsers>
 	</RecipeDef>
 </Defs>

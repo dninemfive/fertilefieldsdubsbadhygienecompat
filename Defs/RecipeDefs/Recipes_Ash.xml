@@ -27,6 +27,10 @@
 		<products>
 			<D9Ash>1</D9Ash>
 		</products>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+			<li>BurnPit</li>
+		</recipeUsers>
 	</RecipeDef>
 	<RecipeDef>
 		<defName>Make_Ash12</defName>
@@ -55,6 +59,10 @@
 		<products>
 			<D9Ash>6</D9Ash>
 		</products>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+			<li>BurnPit</li>
+		</recipeUsers>
 	</RecipeDef>
 	<RecipeDef>
 		<defName>Extend_Fertilizer4</defName> <!-- this and next are legacy defnames from the first build, which was much more generous and allowed OP duplication of fertilizer -->
