@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>Make_Ash2</defName>
+		<label>make ash from fecal sludge</label>
+		<description>Make one pile of ash from half a barrel of fecal sludge.</description>
+		<jobString>Burning fecal sludge.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>875</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FecalSludge</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FecalSludge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<D9Ash>1</D9Ash>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Make_Ash12</defName>
+		<label>make ash from fecal sludge in bulk</label>
+		<description>Make six piles of ash from three barrels of fecal sludge.</description>
+		<jobString>Burning fecal sludge in bulk.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>4200</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FecalSludge</li>
+					</thingDefs>
+				</filter>
+				<count>450</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FecalSludge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<D9Ash>6</D9Ash>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Extend_Fertilizer4</defName> <!-- this and next are legacy defnames from the first build, which was much more generous and allowed OP duplication of fertilizer -->
+		<label>make 6 raw compost with ash</label>
+		<description>Make raw compost from organic waste, extending the inputs with some ash.</description>
+		<jobString>Making raw compost in bulk.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>750</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>RFF_Code.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>RottedMush</li>
+						<li>PlantScraps</li>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>D9Ash</li>
+					</thingDefs>
+				</filter>
+				<count>.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RawCompost>6</RawCompost>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+				<li>Kibble</li>
+				<li>Pemmican</li>
+				<li>D9Ash</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+				<li>D9Ash</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+  		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Extend_Fertilizer60</defName>
+		<label>extend fertilizer</label>
+		<description>Increase the amount of fertilizer you have using ash as a filler.</description>
+		<jobString>Extending fertilizer in bulk.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2363</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Fertilizer</li>
+					</thingDefs>
+				</filter>
+				<count>72</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>D9Ash</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Fertilizer</li>
+				<li>D9Ash</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Fertilizer>75</Fertilizer>
+		</products>
+	</RecipeDef>
+	<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+</Defs>

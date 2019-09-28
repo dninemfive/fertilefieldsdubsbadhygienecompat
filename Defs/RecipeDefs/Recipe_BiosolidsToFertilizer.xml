@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>Make_FertilizerFromBiosolids</defName>
+		<label>make fertilizer from biosolids</label>
+		<description>Pasteurize biosolids into proper fertilizer.</description>
+		<jobString>Pasteurizing biosolids.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workAmount>160</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biosolids</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Biosolids</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Fertilizer>1</Fertilizer>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Make_FertilizerFromBiosolidsBulk</defName>
+		<label>make fertilizer from biosolids in bulk</label>
+		<description>Pasteurize biosolids into proper fertilizer.</description>
+		<jobString>Pasteurizing biosolids in bulk.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biosolids</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Biosolids</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Fertilizer>10</Fertilizer>
+		</products>
+	</RecipeDef>
+</Defs>

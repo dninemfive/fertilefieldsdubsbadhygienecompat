@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>D9FertileFieldsDBHygieneCompat</identifier>
+    <version>1.0.0</version>
+    <dependencies>
+		<li>1539311500</li> <!-- Fertile Fields -->
+		<li>Dubs-Bad-Hygiene</li>
+	</dependencies>
+    <loadAfter/>
+    <suggests/>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/dninemfive/fertilefieldsdubsbadhygienecompat/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/dninemfive/fertilefieldsdubsbadhygienecompat/releases/latest</downloadUri>
+</Manifest>

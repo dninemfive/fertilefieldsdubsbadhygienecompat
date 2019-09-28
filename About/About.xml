@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Fertile Fields Dub's Hygiene Compat</name>
+	<author>dninemfive</author>
+	<supportedVersions><li>1.0</li></supportedVersions>
+	<description>Allows you to process Dub's Hygiene fecal sludge into FF fertilizer in two ways: an inefficient method duplicating fertilizer with fecal sludge, and a more efficient one converting biosolids directly into fertilizer.</description>
+</ModMetaData>

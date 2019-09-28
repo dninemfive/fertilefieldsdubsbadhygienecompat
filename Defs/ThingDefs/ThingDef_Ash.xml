@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef> <!-- copied from Fertile Fields' RFF base -->
+		<defName>D9Ash</defName>
+		<label>ash</label>
+		<description>A pile of burnt organic compounds of various types, producing a fine gray powder. Has enough nutrients to act as a filler for fertilizer.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>		
+		<graphicData>
+			<texPath>Item/Ash</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>2</DeteriorationRate>
+			<MarketValue>0.3</MarketValue>
+			<Mass>0.5</Mass>
+			<Beauty>-7</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+	</ThingDef>
+</Defs>
